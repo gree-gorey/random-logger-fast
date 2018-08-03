@@ -1,5 +1,9 @@
 # random-logger
 
+## This is a fork of [random-logger](https://github.com/chentex/random-logger), changed to generate large log output for testing logging tools, e.g. log rotation.
+
+---
+
 Docker image for a random log generator, based on Alpine Linux.
 
 [![](https://images.microbadger.com/badges/version/chentex/random-logger.svg)](https://microbadger.com/images/chentex/random-logger "Get your own version badge on microbadger.com")
