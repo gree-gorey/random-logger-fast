@@ -1,19 +1,17 @@
 #!/bin/sh
+
 while [ 1 ]
 do
-   waitTime=$(shuf -i 1-5 -n 1)
-   sleep $waitTime &
-   wait $!
    instruction=$(shuf -i 0-4 -n 1)
    d=`date -Iseconds`
    case "$instruction" in
-      "1") echo "$d ERROR something happened in this execution."
+      "1") echo -n "DEDUG " && head -c 2000 < /dev/zero | tr '\0' '\154' && echo
       ;;
-      "2") echo "$d INFO takes the value and converts it to string."
+      "2") echo -n "INFO " && head -c 2000 < /dev/zero | tr '\0' '\154' && echo
       ;;
-      "3") echo "$d WARN variable not in use."
+      "3") echo -n "ERROR " && head -c 2000 < /dev/zero | tr '\0' '\154' && echo
       ;;
-      "4") echo "$d DEBUG first loop completed."
+      "4") echo -n "WARN " && head -c 2000 < /dev/zero | tr '\0' '\154' && echo
       ;;
    esac
 done
