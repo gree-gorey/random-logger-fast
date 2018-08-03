@@ -6,8 +6,8 @@
 
 Docker image for a random log generator, based on Alpine Linux.
 
-[![](https://images.microbadger.com/badges/version/chentex/random-logger.svg)](https://microbadger.com/images/chentex/random-logger "Get your own version badge on microbadger.com")
-[![](https://images.microbadger.com/badges/image/chentex/random-logger.svg)](https://microbadger.com/images/chentex/random-logger "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/greegorey/random-logger-perf.svg)](https://microbadger.com/images/greegorey/random-logger-perf "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/greegorey/random-logger-perf.svg)](https://microbadger.com/images/greegorey/random-logger-perf "Get your own version badge on microbadger.com")
 
 ## What is this?
 
