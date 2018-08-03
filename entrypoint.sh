@@ -1,7 +1,12 @@
 #!/bin/sh
 
+i=0
+k=0
+
 while [ 1 ]
 do
+   i=$((i+1))
+   if [ "$i" -eq 5000 ]; then echo "STAMP-$k" && k=$((k+1)) && i=0; fi
    instruction=$(shuf -i 0-4 -n 1)
    d=`date -Iseconds`
    case "$instruction" in
